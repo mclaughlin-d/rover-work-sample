@@ -18,7 +18,6 @@ class MotorDegreePublisher(Node):
         super().__init__('motor_degree_publisher')
         
         # create a publisher
-        # TODO explain args
         self.degree_publisher = self.create_publisher(Float32, 'motor_degree_cmd', 1)
 
         # create a timer to update the command message and publish
