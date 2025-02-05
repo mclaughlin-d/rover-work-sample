@@ -4,9 +4,9 @@
 The 2023 LD system consisted of 1) a linear actuator, which moved a funnel along 6 different positions corresponding to 6 different soil sample slots, 2) a water pump, and 3) an array of 6 light sensors. It was controlled with an XBox controller.
 
 ## Components
-1. Firmware - 
-2. ROS Nodes - 
-3. UI - I designed the UI tab for the science readouts.
+1. Firmware - this code worked with a Nucleo L476RG to control a linear actuator, light sensor, and water pump (which was a DC step motor). 
+2. ROS Nodes - these nodes interacted with the firmware and an xbox controller, as well as the UI, to provide an interface for life detection system control.
+3. UI - there was a dedicated 'science' tab in our UI which displayed the linear actuator position and light sensor readings.
 
 ## Firmware - ld_board_2023
 
