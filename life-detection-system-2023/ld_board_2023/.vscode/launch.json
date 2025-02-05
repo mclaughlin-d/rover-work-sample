@@ -1,0 +1,32 @@
+{
+	"configurations": [
+		{
+			"cwd": "${workspaceFolder}",
+			"executable": "${workspaceFolder}/build/debug/${workspaceFolderBasename}.elf",
+			"name": "Debug NucleoL476RG",
+			"request": "launch",
+			"type": "cortex-debug",
+			"servertype": "stutil",
+			"serverpath": "/usr/bin/st-util",
+			"interface": "swd",
+			"device": "STM32L476RG",
+			"armToolchainPath": "${workspaceFolder}/../../lib/gcc-arm-none-eabi/bin/",
+			"svdFile": "${workspaceFolder}/../../tools/STM32L4x6.svd",
+			"preLaunchTask": "BuildNucleo"
+		},
+		{
+			"cwd": "${workspaceFolder}",
+			"executable": "${workspaceFolder}/build/debug/${workspaceFolderBasename}.elf",
+			"name": "Debug STM32L476RG",
+			"request": "launch",
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			"serverpath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe",
+			"interface": "swd",
+			"device": "STM32L476RG",
+			"armToolchainPath": "${workspaceFolder}/../../lib/gcc-arm-none-eabi/bin/",
+			"svdFile": "${workspaceFolder}/../../tools/STM32L4x6.svd",
+			"preLaunchTask": "BuildSTM"
+		},
+	]
+}

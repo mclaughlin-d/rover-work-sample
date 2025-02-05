@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="demo_package" exec="motor_degree" name="motor_degree" />
+    <node pkg="demo_package" exec="motor_controller" name="motor_controller" />
+</launch>

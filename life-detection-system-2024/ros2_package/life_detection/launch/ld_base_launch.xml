@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="life_detection" exec="life_detection_joy" name="life_detection_joy" />
+</launch>

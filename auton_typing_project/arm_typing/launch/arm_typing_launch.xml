@@ -1,0 +1,9 @@
+<launch>
+  <arg name="keyboard_config_path" />
+
+  <!-- This node launches the autonomous typing server -->
+  <node pkg="arm_typing" exec="auton_typing_server" name="auton_typing_server">
+    <param name="keyboard_config_path" value="$(find-pkg-share arm_typing)/config/test_keyboard.yaml"/>
+  </node>
+
+</launch>

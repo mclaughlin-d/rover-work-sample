@@ -1,0 +1,108 @@
+keyboard:
+  test_keyboard:
+    known_key: 'p'
+    character_deltas:
+      a:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 12.0
+      b:
+        x_delta: 4.0
+        y_delta: 0.0
+        z_delta: 12.0
+      c:
+        x_delta: 8.0
+        y_delta: 0.0
+        z_delta: 12.0
+      d:
+        x_delta: 12.0
+        y_delta: 0.0
+        z_delta: 12.0
+      e:
+        x_delta: 16.0
+        y_delta: 0.0
+        z_delta: 12.0
+      f:
+        x_delta: 0.0
+        y_delta: 8.0
+        z_delta: 8.0
+      g:
+        x_delta: 4.0
+        y_delta: 0.0
+        z_delta: 8.0
+      h:
+        x_delta: 8.0
+        y_delta: 0.0
+        z_delta: 8.0
+      i:
+        x_delta: 12.0
+        y_delta: 0.0
+        z_delta: 8.0
+      j:
+        x_delta: 16.0
+        y_delta: 0.0
+        z_delta: 8.0
+      k:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 4.0
+      l:
+        x_delta: 4.0
+        y_delta: 0.0
+        z_delta: 4.0
+      m:
+        x_delta: 8.0
+        y_delta: 0.0
+        z_delta: 4.0
+      n:
+        x_delta: 12.0
+        y_delta: 0.0
+        z_delta: 4.0
+      o:
+        x_delta: 16.0
+        y_delta: 0.0
+        z_delta: 4.0
+      p:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0
+      q:
+        x_delta: 4.0
+        y_delta: 0.0
+        z_delta: 0.0
+      r:
+        x_delta: 8.0
+        y_delta: 0.0
+        z_delta: 0.0
+      s:
+        x_delta: 12.0
+        y_delta: 0.0
+        z_delta: 0.0
+      t:
+        x_delta: 16.0
+        y_delta: 0.0
+        z_delta: 0.0
+      u:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0
+      v:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0
+      w:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0
+      x:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0
+      y:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0
+      z:
+        x_delta: 0.0
+        y_delta: 0.0
+        z_delta: 0.0

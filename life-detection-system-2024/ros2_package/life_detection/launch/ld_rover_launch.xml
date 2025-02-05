@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="life_detection" exec="carousel_control" name="carousel_control" />
+    <node pkg="life_detection" exec="uv_spec_forwarder" name="uv_spec_forwarder" />
+    <node pkg="life_detection" exec="ld_board" name="ld_board" />
+</launch>
