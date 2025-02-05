@@ -8,3 +8,6 @@ The Rover team uses some specific libraries and custom pieces of code which are 
 
 ### RoverSerial
 The Rover team has worked with a custom serial protocol, called RoverSerial, built on top of MBedOS's serial protocols (USBSerial and UnbufferedSerial). This library works by defining a single 'struct' message type for each direction of the serial communication, which is the only type of message that can be sent over serial.
+
+### XBoxControllerState
+The Rover team uses a custom utility class (not written by me) to use joysticks in our ROS layer.
