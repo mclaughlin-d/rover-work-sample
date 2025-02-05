@@ -10,7 +10,6 @@ import time
 
 
 class CharacterTyper:
-    TYPING_DELTA = 0.00001  # TODO - determine a good value
 
     def __init__(self, config_path: str, node: Node) -> None:
         self.keyboard_configs: List[KeyboardConfig] = parse_config(config_path)
@@ -79,7 +78,7 @@ class CharacterTyper:
             f"character {character_config.character}..."
         )
 
-        # TODO - add some timeout, don't wait forever that's not a good idea lol
+        # TODO - add some timeout, don't wait forever that's not a good idea
         while not self.at_character():
             continue
 
