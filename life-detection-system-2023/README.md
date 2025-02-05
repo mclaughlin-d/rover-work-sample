@@ -30,6 +30,8 @@ commanded to move to the 6th position multiple times in a row (there was a risk 
 My Solution: I tracked whether or not the last commanded position was position 6, and prevented it from being executed multiple times in a row. This was another decision driven by tight time constraints. 
 
 ## ROS Nodes
+Note - at the time, the team was having issues with getting imports working for custom libraries (`XBoxControllerState` and `RoverSerial` specifically) so the code had to be copy-pasted when used in ROS node files. This has since been resolved.  
+  
 ### ld_board
 This node contains most of the tricky, convoluted state logic that arose from the previous issues mentioned. It's not clean, but it worked during competition, and a lot of it was written in Utah during the competition itself. 
 
