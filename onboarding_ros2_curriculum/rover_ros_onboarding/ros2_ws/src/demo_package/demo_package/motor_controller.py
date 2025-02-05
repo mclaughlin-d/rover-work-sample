@@ -55,8 +55,7 @@ class MotorController(Node):
 
         # get the motor state
         self.update_motor_state()
-        # publish the motor state - TODO determine if this is better demonstrated as 
-        # a timer callback idk
+        # publish the motor state
         self.motor_pub.publish(self.motor_state)
 
     def update_motor_state(self):
