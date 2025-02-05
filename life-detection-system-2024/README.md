@@ -13,10 +13,10 @@ For the initial firmware project, I helped a new member write the core of the au
 
 ### Development Issues
 #### 1: The 'Dallas One-Wire Protocol'
-Initially, this project worked with a combined temperature and humidity sensor which was controlled over I2C. However, this sensor broke ~1 week before the team left for Utah, so a replacement was ordered. The humidity sensor was a simple analog input, however, the temperature sensor ordered used the 'Dallas One-Wire Protocol', which MbedOS has not supported since Mbed2 (we used Mbed6).   
+Initially, this project worked with a combined temperature and humidity sensor which was controlled over I2C. However, this sensor broke ~1 week before the team left for Utah, so a replacement was ordered. The humidity sensor was a simple analog input, however, the temperature sensor ordered used the 'Dallas One-Wire Protocol', which MbedOS has not supported since Mbed2 (we used Mbed6). I had attempted, with no success, to get old Mbed samples working with this protocol. I considered implementing the protocol from scratch just by looking at the datasheet, but did not have the time to do that.  
   
 Solution:  
-Due to the tight time constraints, the quick solution was to use a known working board (an Arduino mega) with some modified sample code to read from the sensor. This Arduino Mega was connected to the Nucleo board over serial (which can be seen in the temperature thread in the 'threads' folder). This had to be done due to limited USB slots available on the USB hubs connected to the Jetson Orin (there were no free slots available for interfacing with the Arudio directly). 
+Due to the tight time constraints, the quick solution was to use a board that did support the Dallas One-Wire protocol (an Arduino mega) with some modified sample code to read from the sensor. This Arduino Mega was connected to the Nucleo board over serial (which can be seen in the temperature thread in the 'threads' folder). This had to be done due to limited USB slots available on the USB hubs connected to the Jetson Orin (there were no free slots available for interfacing with the Arudio directly). 
   
 
 Takeaways:
