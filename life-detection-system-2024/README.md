@@ -1,6 +1,7 @@
 # Life Detection System - 2024
 
 ## Description
+The life detection system for 2024 consisted of 2 main components: a 3-stage auger which would drill into the dirt to colelct soil samples, and a carousel which performed tests on soil samples. 
 
 ## Components
 1. Firmware - 'auger_2024': this project controlled a 3-stage auger system as well as a temperature sensor and a humidity sensor.
@@ -20,7 +21,6 @@ Due to the tight time constraints, the quick solution was to use a known working
 
 Takeaways:
 1. Communication: more communication between mechanical/science members and myself would have prevented a sensor from being ordered which was not supported by our firmware build system.
-2. 
 
 ## ROS2 Contributions
 ### carousel_control.py
@@ -30,5 +30,7 @@ Takeaways:
 1. Possible abstraction: this node duplicated a lot of code written for the dynamixel control node (dynamixel_control.py). A future improvement would be to abstract the constants and read/write (as well as group bulk read/write) into a single utility class that could be instantiated to work with different U2D2 boards by different ROS nodes.
 
 ### ld_board.py
+This node interacted with the devboard which controlled the auger.
 
 ### life_detection_joy.py
+This node responded to changes in an XBox controller state to control the life detection system. 
