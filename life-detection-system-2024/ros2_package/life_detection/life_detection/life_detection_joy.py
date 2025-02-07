@@ -12,12 +12,10 @@ class LifeDetectionXBoxController(XboxController):
     CAROUSEL_VEL_MODE = False
 
     # carousel presets (by index)
-    CAROUSEL_PRESETS = [60.0, 120.0, 180.0]  # TODO figure out actual preset values
+    CAROUSEL_PRESETS = [60.0, 120.0, 180.0]
 
     # carousel position increment
-    CAROUSEL_POSITION_INCR = 0.1  # TODO testing to fine-tune
-    # TODO ^ this could get hairy if this is faster than dynamixel could move, switch to
-    # current mode for dynamixel instead? wouldn't be too hard to add...
+    CAROUSEL_POSITION_INCR = 0.1 
 
     DRILL_SPEED = -0.5
 
