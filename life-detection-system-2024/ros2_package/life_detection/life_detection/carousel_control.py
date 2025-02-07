@@ -6,8 +6,6 @@ from dynamixel_sdk import PortHandler, PacketHandler
 
 from std_msgs.msg import Float32
 
-
-# TODO form of abstraction with the other dynamixel node with this stuff?
 class DynamixelConfig:
     def __init__(self, id, name, current_limit, pwm_limit):
         self.id = id
@@ -17,7 +15,6 @@ class DynamixelConfig:
 
 
 class CarouselDynamixel:
-    # TODO some form of abstraction here?
     class ControlTable:
         ADDR_TORQUE_ENABLE = 64
         ADDR_GOAL_POSITION = 116
