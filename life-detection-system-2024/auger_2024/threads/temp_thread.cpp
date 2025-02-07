@@ -17,7 +17,6 @@ float f_temp;
 
 void buf_to_temps()
 {
-  // TODO abstract? also only use lower two bytes for now, change ot only send two bytes later?
   c_temp = ((msg[4] * pow(2, 8)) + msg[5]) / 100;
   f_temp = ((msg[10] * pow(2, 8)) + msg[11]) / 100;
 }
