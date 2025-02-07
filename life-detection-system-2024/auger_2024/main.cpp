@@ -33,7 +33,6 @@ typedef struct
   float rh_reading;
   float f_temp;
   float c_temp;
-  // TODO add a timestamp for the temp readings maybe?
 } auger_status_t;
 
 int floatToPulseWidth(float speed)
