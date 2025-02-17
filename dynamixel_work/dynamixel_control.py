@@ -805,10 +805,6 @@ class DynamixelController:
             else:  # added for debugging - 1/19/23
                 pass
 
-        # TODO - ACTUALLY USE BULKREAD RESULT INSTEAD OF JUST ASSUMING 0 = WRONG
-        # SO WE CAN TELL IF DATA WAS ACTUALLY FOUND OR NOT
-        # NOTE or change data result so that it is not returning 0 and returns something else
-        # for now, return null
         bulkRead_result = self.groupread_num.txRxPacket()  # noqa: F841
 
         if bulkRead_result != 0:
