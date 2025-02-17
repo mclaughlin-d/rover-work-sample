@@ -14,7 +14,7 @@ DigitalOut pin(D7);
 
 AnalogIn humiditySensorPin(PC_3);
 
-// constants for humidity sensor calibration TODO find better ones
+// constants for humidity sensor calibration
 float air_reading = 1.2;
 float water_reading = 0.7;
 
