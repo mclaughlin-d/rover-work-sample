@@ -369,7 +369,6 @@ class LDBoard:
         return self.ld_command
 
     def has_state_changed(self, newCommand):
-        # can I just return the boolean logic?? ASK ABT THIS - NOTE
         if (
             self.last_state.lin_act_pos != newCommand.lin_act_pos
             or self.last_state.pump_dir != newCommand.pump_dir
